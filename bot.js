@@ -9,30 +9,30 @@ client.on('message', message => {
       
   if (message.content.startsWith(adminprefix + 'setg')) {
     client.user.setGame(argresult);
-      message.channel.send(`LastCodes   ${argresult}**`)
+      message.channel.send(`تم ياسين الرجوع للحالة العادية  ${argresult}**`)
   } else 
      if (message.content === (adminprefix + "leave")) {
     message.guild.leave();        
   } else  
   if (message.content.startsWith(adminprefix + 'setw')) {
   client.user.setActivity(argresult, {type:'WATCHING'});
-      message.channel.send(`LastCodes   ${argresult}**`)
+      message.channel.send(`تم ياسين تغير حالتك الي مشاهد   ${argresult}**`)
   } else 
   if (message.content.startsWith(adminprefix + 'setl')) {
   client.user.setActivity(argresult , {type:'LISTENING'});
-      message.channel.send(`LastCodes   ${argresult}**`)
+      message.channel.send(`تم ياسين تغير حالتك ال مستمع   ${argresult}**`)
   } else 
   if (message.content.startsWith(adminprefix + 'sets')) {
     client.user.setGame(argresult, "https://www.twitch.tv/One");
-      message.channel.send(`LastCodes`)
+      message.channel.send(`تم ياسين تغير حالتك الي ستريمنج`)
   }
   if (message.content.startsWith(adminprefix + 'setname')) {
   client.user.setUsername(argresult).then
-      message.channel.send(`Changing The Name To ..**${argresult}** `)
+      message.channel.send(`تغير الاسم ياسين الى : ..**${argresult}** `)
 } else
 if (message.content.startsWith(adminprefix + 'setavatar')) {
   client.user.setAvatar(argresult);
-    message.channel.send(`Changing The Avatar To :**${argresult}** `);
+    message.channel.send(`تغير الصورةياسين الى : :**${argresult}** `);
 }
 });
 

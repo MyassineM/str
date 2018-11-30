@@ -7,9 +7,9 @@ client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
       
-  if (message.content.startsWith(adminprefix + 'setg')) {
+  if (message.content.startsWith(adminprefix + 'setp')) {
     client.user.setGame(argresult);
-      message.channel.send(`تم ياسين الرجوع للحالة العادية  ${argresult}**`)
+      message.channel.send(`تم ياسين الرجوع للحالة اللاعب  ${argresult}**`)
   } else 
      if (message.content === (adminprefix + "leave")) {
     message.guild.leave();        
